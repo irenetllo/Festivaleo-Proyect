@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main02"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.irene_tllo.festivaleo02.RegistroActivity"
+    android:background="#B9D7FC">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:inputType="textPersonName"
+            android:hint="Nombre de usuario"
+            android:ems="10"
+            android:id="@+id/nomU"
+            android:background="@android:drawable/editbox_background"
+            android:layout_marginTop="11dp"
+            android:layout_below="@+id/email"
+            android:layout_alignStart="@+id/email"
+            android:layout_alignParentEnd="true" />
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:inputType="textPersonName"
+            android:hint="Contraseña"
+            android:ems="10"
+            android:id="@+id/password"
+            android:background="@android:drawable/editbox_background"
+            android:layout_marginTop="11dp"
+            android:layout_below="@+id/nomU"
+            android:layout_alignStart="@+id/nomU"
+            android:layout_alignParentEnd="true" />
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:inputType="textPersonName"
+            android:hint="Repita la contraseña"
+            android:ems="10"
+            android:id="@+id/passwordV"
+            android:background="@android:drawable/editbox_background"
+            android:layout_marginTop="11dp"
+            android:layout_below="@+id/password"
+            android:layout_alignStart="@+id/password"
+            android:layout_alignParentEnd="true" />
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:inputType="textPersonName"
+            android:hint="Telefono"
+            android:ems="10"
+            android:id="@+id/tel"
+            android:background="@android:drawable/editbox_background"
+            android:layout_marginTop="11dp"
+            android:layout_below="@+id/passwordV"
+            android:layout_alignStart="@+id/passwordV"
+            android:layout_alignParentEnd="true" />
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:inputType="textPersonName"
+            android:hint="Fecha nacimiento dd/mm/aa"
+            android:ems="10"
+            android:id="@+id/fechaNac"
+            android:background="@android:drawable/editbox_background"
+            android:layout_marginTop="11dp"
+            android:layout_below="@+id/tel"
+            android:layout_alignStart="@+id/passwordV"
+            android:layout_alignParentEnd="true" />
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:inputType="textPersonName"
+            android:hint="Ciudad donde vives"
+            android:ems="10"
+            android:id="@+id/ciudad"
+            android:background="@android:drawable/editbox_background"
+            android:layout_marginTop="11dp"
+            android:layout_below="@+id/fechaNac"
+            android:layout_alignStart="@+id/passwordV"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:text="Iniciar Sesion"
+            android:layout_width="match_parent"
+            android:id="@+id/btnISR"
+            android:layout_weight="1"
+            android:background="#4285F4"
+            android:layout_below="@+id/ciudad"
+            android:layout_marginTop="11dp"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView6"
+            android:background="@android:drawable/ic_dialog_email"
+            android:layout_marginStart="18dp"
+            android:layout_alignTop="@+id/email"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView7"
+            android:background="@android:drawable/ic_menu_myplaces"
+            android:layout_alignTop="@+id/nomU"
+            android:layout_alignStart="@+id/textView6"
+            android:layout_alignBottom="@+id/nomU"
+            android:layout_alignEnd="@+id/textView6" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView12"
+            android:background="@android:drawable/ic_lock_idle_lock"
+            android:layout_alignTop="@+id/tel"
+            android:layout_alignStart="@+id/textView7"
+            android:layout_above="@+id/fechaNac"
+            android:layout_alignEnd="@+id/textView7" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView10"
+            android:background="@android:drawable/ic_lock_idle_lock"
+            android:layout_alignTop="@+id/password"
+            android:layout_alignStart="@+id/textView8"
+            android:layout_above="@+id/passwordV"
+            android:layout_alignEnd="@+id/textView7" />
+
+        <TextView
+            android:text="Aceptas los terminos y condiciones politica de privacidad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView4"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:textAlignment="center"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/btnISR"
+            android:layout_alignStart="@+id/btnISR"
+            android:layout_alignParentEnd="true" />/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView11"
+            android:background="@android:drawable/ic_menu_day"
+            android:layout_alignTop="@+id/fechaNac"
+            android:layout_alignStart="@+id/textView8"
+            android:layout_above="@+id/ciudad"
+            android:layout_alignEnd="@+id/textView12" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="email"
+            android:ems="10"
+            android:id="@+id/email"
+            android:layout_marginTop="11dp"
+            android:background="@android:drawable/editbox_background"
+            android:layout_height="40dp"
+            android:layout_below="@+id/titulo"
+            android:layout_alignParentEnd="true"
+            android:layout_alignStart="@+id/titulo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView8"
+            android:background="@android:drawable/ic_lock_idle_lock"
+            android:layout_alignTop="@+id/passwordV"
+            android:layout_alignStart="@+id/textView12"
+            android:layout_above="@+id/tel"
+            android:layout_alignEnd="@+id/textView12" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView13"
+            android:background="@android:drawable/ic_lock_idle_lock"
+            android:layout_alignStart="@+id/textView11"
+            android:layout_alignEnd="@+id/textView11"
+            android:layout_above="@+id/btnISR"
+            android:layout_alignTop="@+id/ciudad" />
+
+        <TextView
+            android:text="Facil y Rapido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/titulo"
+            android:textSize="24sp"
+            tools:text="Facil y Rapido"
+            android:textStyle="normal|bold|italic"
+            android:textColor="#000000"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:drawable/editbox_dropdown_light_frame"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginBottom="10dp">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        style="@style/RowTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/foto"
+        android:layout_toRightOf="@+id/foto"
+        android:paddingLeft="@dimen/row_padding" />
+
+    <TextView
+        android:id="@+id/subtitleTextView"
+        style="@style/RowSubtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/titleTextView"
+        android:layout_alignStart="@+id/titleTextView"
+        android:layout_below="@+id/titleTextView"
+        android:paddingLeft="@dimen/row_padding" />
+    <TextView
+        android:id="@+id/nomUser"
+        style="@style/RowSubtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/subtitleTextView"
+        android:layout_alignStart="@+id/subtitleTextView"
+        android:layout_below="@+id/subtitleTextView"
+        android:paddingLeft="@dimen/row_padding" />
+
+    <Button
+        android:text="Borrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnborrar"
+        android:layout_below="@+id/nomUser"
+        android:layout_centerInParent="true"/>
+
+
+</RelativeLayout>

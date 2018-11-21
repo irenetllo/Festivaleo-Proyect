@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_perfil"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.irene_tllo.festivaleo.PerfilDetActivity"
+    android:weightSum="1">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:minHeight="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="@dimen/elevation"
+        app:navigationIcon="?attr/homeAsUpIndicator"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/Theme.AppCompat.Light"
+        tools:ignore="UnusedAttribute"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="TELEFONO:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="31dp"
+            android:id="@+id/tel"
+            android:textStyle="normal|bold|italic"
+            android:textSize="18sp"
+            android:layout_below="@+id/nombreF"
+            android:layout_alignStart="@+id/nombreF" />
+        <TextView
+            android:text="CIUDAD:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="31dp"
+            android:id="@+id/ciu"
+            android:textStyle="normal|bold|italic"
+            android:textSize="18sp"
+            android:layout_below="@+id/tel"
+            android:layout_alignStart="@+id/tel" />
+        <TextView
+            android:text="AÑO:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="31dp"
+            android:id="@+id/ani"
+            android:textStyle="normal|bold|italic"
+            android:textSize="18sp"
+            android:layout_below="@+id/ciu"
+            android:layout_alignStart="@+id/ciu" />
+        <TextView
+            android:text="CORREO:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="31dp"
+            android:id="@+id/cor"
+            android:textStyle="normal|bold|italic"
+            android:textSize="18sp"
+            android:layout_below="@+id/ani"
+            android:layout_alignStart="@+id/ani" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tel"
+            android:layout_alignStart="@+id/nombreUS"
+            android:id="@+id/telefonoUS" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/ciu"
+            android:layout_alignStart="@+id/telefonoUS"
+            android:id="@+id/ciudadUS" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/cor"
+            android:layout_alignStart="@+id/anioUS"
+            android:id="@+id/correoUS" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/anioUS"
+            android:layout_alignBaseline="@+id/ani"
+            android:layout_alignBottom="@+id/ani"
+            android:layout_alignStart="@+id/ciudadUS" />
+
+        <TextView
+            android:text="NOMBRE:"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="49dp"
+            android:id="@+id/nombreF"
+            android:textStyle="normal|bold|italic"
+            android:textSize="18sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/nombreUS"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="43dp"
+            android:layout_alignTop="@+id/nombreF"
+            android:layout_toEndOf="@+id/nombreF" />
+
+        <Button
+            android:text="MODIFICAR PEFIL"
+            android:layout_width="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/btnModPErfil"
+            android:layout_toEndOf="@+id/correoUS"
+            android:layout_height="100dp"
+            android:layout_alignStart="@+id/correoUS" />
+
+        <Button
+            android:text="ELIMINAR CUENTA"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:id="@+id/btnElimPerfil"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/btnModPErfil" />
+
+
+    </RelativeLayout>
+
+    <!--app:navigationIcon="?attr/homeAsUpIndicator"-->
+
+
+
+
+
+</LinearLayout>
